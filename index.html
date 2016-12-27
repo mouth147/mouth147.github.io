@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mike Botti - Software Engineer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- This site was built off of the theme from Start Bootstrap: https://startbootstrap.com/template-overviews/freelancer/ -->
+    <!-- Picture in header is used from https://unsplash.com/collections/309306/water?photo=Uke5QBVdyXo by Sweet Ice Cream Photography-->
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Maps -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+        var myCenter=new google.maps.LatLng(40.498591, -74.449232);
+
+        function initialize()
+        {
+            var mapProp = {
+               center:myCenter,
+               zoom:13,
+               mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+
+            var map=new google.maps.Map(document.getElementById("location"),mapProp);
+
+            var marker=new google.maps.Marker({
+               position:myCenter,
+            });
+
+            marker.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+        google.maps.event.addDomListener(window, 'resize', initialize);
+    </script>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="http://blog.mikebotti.com/">Blog</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive img-circle" src="img/profile-compressor.jpg" alt="">
+                    <div class="intro-text">
+                        <span class="name">Mike Botti</span>
+                        <hr class="star-light">
+                        <span class="skills">Computer Science Undergrad | Software Engineer | Front-End Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Recent Work</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/crime-compressor.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/iscg-compressor.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/edgewood1-compressor.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/blog-compressor.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Hiya - my name's Mike Botti. I'm a student at <a href="http://cs.rutgers.edu/">Rutgers University</a> studying computer science. I'm gonna be interning at <a href="https://www.icims.com/">iCIMS</a> summer 2017 as a software developer intern and right before that I'll be in Europe <a href="https://www.youtube.com/watch?v=MHp_WNsMkKo">playing music</a> with my best friends. I like to take advantage of my time being productive and living life how I want.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Some tools/languages I use pretty frequently:
+                    <ul>
+                        <li>Java, C, Python, Flask</li>
+                        <li>HTML, CSS, JavaScript, jQuery, Bootstrap, Wordpress</li>
+                        <li>MySQL, SQLite</li>
+                        <li>Adobe Photoshop, Git, Sublime Text, Amazon AWS, Vim, Eclipse, Cubase</li>
+                    </ul></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Resume</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="./resume.pdf" class="btn btn-lg btn-resume">
+                        <i class="fa fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-6">
+                        <h3>Location</h3>
+                        <p><strong>New Brunswick, NJ</strong></p>
+                        <div id="location" style="width:100%;height:230px;">
+                        </div>
+                    </div>
+                    <div class="footer-col col-md-6">
+                        <h3>Get in touch</h3>
+                        <br><br><br>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="mailto:mikexbotti@gmail.com" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://www.github.com/mouth147" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://www.instagram.com/mikexbotti" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://www.twitter.com/xmikeb" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://www.linkedin.com/in/mikebotti" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Mike Botti 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll ">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Police Killings and Crime Rates</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/crime-compressor.png" class="img-responsive img-centered" alt="">
+                            <p>This was a semester long project that was built for a database class at Rutgers University. The topic given originally was gun control but it developed into something more relatable in today's time. Taking data from multiple sources I was able to create an interactive web application that allows the user to compare and contrast crimes in cities/states along with people that were killed by police officers. Users can make their own judgement to whether or not they believe crime rates provoke certain police killings, whther or not race has a big play in it, or whether or not the person that was killed was a victim due to a weapon or a crime they were committing. <br><br>The application was built using <strong>Python, Flask, HTML, CSS, Bootstrap, jQuery, and SQLite</strong>. The application uses <strong>Nginx, Gunicorn</strong> and is running on <strong>Amazon AWS</strong>. I take the data sources, separate it into relational tables and then store them into the SQLite database from a csv file. From there the user can query the database using the web application and produce graphs.</p>
+                            <ul class="list-inline item-details">
+                                <li>Source Code:
+                                    <strong><a href="http://github.com/mouth147/policecrime">Github</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">December 2016</a>
+                                    </strong>
+                                </li>
+                                <li>Live Application:
+                                    <strong><a href="http://policeandcrime.mikebotti.com">policeandcrime.mikebotti.com</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>International Sales Consulting Group</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/iscg-compressor.png" class="img-responsive img-centered" alt="">
+                            <p>This was a redesign of an already existing website. ISCG's website was very unfriendly and wasn't too pleasing to look at. The original site was hosted and designed using Squarespace, so I selected a more modern template and built the website off of that. This was mainly all front-end so the only thing the only languages I used were <strong>HTML and CSS</strong>.<p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong><a href="#">October 2016</a>
+                                    </strong>
+                                </li>
+                                <li>Live Website:
+                                    <strong><a href="http://international-consulting.squarespace.com">ISCG</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Edgewood Records</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/edgewood1-compressor.png" class="img-responsive img-centered" alt="">
+                            <p>This was a website that was built from scratch for a record company based out of Richmond, VA. They needed a simple website where they could post updates and news pertaining the company while showcasing their current artists in a good looking way. Since the company wanted to be able to post updates on their behalf without needing any assisstance, I figured the best bet was to use <strong>Wordpress</strong>. Since this site was being built from scratch, they didn't have any graphic design done for the website. I had to create all the images used on the site using <strong>photoshop</strong>. It was built using <strong>Wordpress, HTML, CSS, Bootstrap, Adobe Photoshop and Amazon AWS</strong>.</p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong><a href="#">August 2016</a>
+                                    </strong>
+                                </li>
+                                <li>Live Website:
+                                    <strong><a href="http://edgewood-records.com">Edgewood Records</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Flask Blog</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/blog-compressor.png" class="img-responsive img-centered" alt="">
+                            <p>The purpose of this project was to teach myself <strong>Python and Flask</strong>. I've heard many people talk about web applications at Hackathons and how much they loved Python so I wanted to give myself a project that I could benefit from. The first decision was between using <strong>Flask</strong> and Django. I chose Flask because it had a very low overhead and was extremely minimalistic compared to Django. If I needed a feature done, I would most likely have to implement my own version rather than just have it come pre-built using Django. I wanted the whole experience of a blog: user logins, image uploads, editing posts, creating new posts, an admin panel, etc. So over the course of a month I implented every feature I would want in a blogging website. <br><br>This project is currently hosted on <strong>Amazon AWS</strong> running on a <strong>Gunicorn</strong> application server and <strong>Nginx</strong> webserver. The project is built using <strong>Python, Flask, Bootstrap, HTML, CSS, SQLite, and Adobe Photoshop.</strong> The application fetches posts from the database and populates the pages with the data. Users can log in/log out, edit posts(if they have access), upload pictures, delete posts, view all posts, and write/edit draft posts.</p>
+                            <ul class="list-inline item-details">
+                                <li>Source Code:
+                                    <strong><a href="http://github.com/mouth147/pythonblog">Github</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">June 2016</a>
+                                    </strong>
+                                </li>
+                                <li>Live Application:
+                                    <strong><a href="http://blog.mikebotti.com">blog.mikebotti.com</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>
